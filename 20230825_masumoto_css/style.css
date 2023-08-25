@@ -2,7 +2,6 @@ body {
     margin: 0;
 }
 .header {
-    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -27,6 +26,7 @@ a {
     display: grid;
     grid-template-rows: 25px 25px 200px 50px 50px 50px;
     grid-template-columns: 2fr 1fr 1fr;
+    position: relative;
 }
 
 .practice__ttl {
@@ -34,12 +34,14 @@ a {
     grid-row: 4/5;
     font-size: 300%;
     align-self: center;
+    margin-top: 150px;
 }
 
 .practice__img {
     grid-column: 2/4;
     grid-row: 2/6;
     z-index: 10;
+    height: 400px;
 }
 
 .practice__img img {
@@ -53,4 +55,6 @@ a {
     grid-row: 5/7;
     background-color: rgb(19, 19, 153);
     z-index: 0;
+    height: 150px;
+    margin-top: 50px;
 }
